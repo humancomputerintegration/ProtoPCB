@@ -1,0 +1,237 @@
+(footprint "USB_B"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "USB B connector")
+	(tags "USB_B USB_DEV")
+	(property "Reference" "REF**"
+		(at 9.812 -5.416 90)
+		(layer "F.SilkS")
+		(uuid "89355e81-9400-452b-99a7-4dc6a31c52f1")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USB_B"
+		(at 4.7 1.27 90)
+		(layer "F.Fab")
+		(uuid "0405a5a0-3790-411a-8d58-b81dc1377f86")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ac18fefb-3a83-4ae5-9bdc-84a6fe81202f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91b97e5e-66bb-43f1-9609-571d45ee99ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c5021ce-ef02-45c9-989f-e9d00c8db9f1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.03 -4.83)
+		(end 3.05 -4.83)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6d97486b-46c3-4689-a5cc-2be5b94d266e")
+	)
+	(fp_line
+		(start -2.03 7.37)
+		(end -2.03 -4.83)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "31e23923-612d-44fb-bdc8-9ae69ce93bda")
+	)
+	(fp_line
+		(start -2.03 7.37)
+		(end 3.05 7.37)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ecb231e2-24ec-4e5b-8e7f-369e349621ba")
+	)
+	(fp_line
+		(start 6.35 -4.83)
+		(end 14.99 -4.83)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "99e9163c-dd0c-4d42-b56d-fdcd3eb371c9")
+	)
+	(fp_line
+		(start 6.35 7.37)
+		(end 14.99 7.37)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9278c7db-d009-4680-9b51-46210a22f698")
+	)
+	(fp_line
+		(start 14.99 -4.83)
+		(end 14.99 7.37)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2a644df2-1b90-49c3-bf9a-24768d1840e8")
+	)
+	(fp_line
+		(start -2.3 -6.35)
+		(end 15.25 -6.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8302b808-78d4-453f-b35c-8d42330fe22e")
+	)
+	(fp_line
+		(start -2.3 8.9)
+		(end -2.3 -6.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ff9439a0-6a28-49ce-9266-eaf294db755b")
+	)
+	(fp_line
+		(start 15.25 -6.35)
+		(end 15.25 8.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "29733da1-e77a-4f34-b5a9-6713299f2558")
+	)
+	(fp_line
+		(start 15.25 8.9)
+		(end -2.3 8.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "faa8c20e-f578-4eec-9819-14f15eb3bdcb")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0 270)
+		(size 1.52 1.52)
+		(drill 0.81)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cb2ff684-fdc2-4feb-bde4-0e0c43ab4506")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54 270)
+		(size 1.52 1.52)
+		(drill 0.81)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2354cc73-fea7-4b7c-8179-fc697696b2b7")
+	)
+	(pad "3" thru_hole circle
+		(at 2 2.54 270)
+		(size 1.52 1.52)
+		(drill 0.81)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "743a39ca-1f03-42d4-a373-ecec1a56f674")
+	)
+	(pad "4" thru_hole circle
+		(at 2 0 270)
+		(size 1.52 1.52)
+		(drill 0.81)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c907e531-9e83-440c-b75a-a4cd745fedac")
+	)
+	(pad "5" thru_hole circle
+		(at 4.7 -4.73 270)
+		(size 2.7 2.7)
+		(drill 2.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fb5bda82-30e2-46c1-834c-3f043496090b")
+	)
+	(pad "5" thru_hole circle
+		(at 4.7 7.27 270)
+		(size 2.7 2.7)
+		(drill 2.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9c0c8952-55f7-4381-a0d8-f472768f8c86")
+	)
+	(model "${KISYS3DMOD}/Connectors.3dshapes/USB_B.wrl"
+		(offset
+			(xyz 4.571999931 -1.269999981 0)
+		)
+		(scale
+			(xyz 0.39 0.39 0.39)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+	(model "../../packages3d/Connect.3dshapes/USB_B.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

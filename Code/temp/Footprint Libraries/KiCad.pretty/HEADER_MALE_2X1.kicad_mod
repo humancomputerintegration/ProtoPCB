@@ -1,0 +1,121 @@
+(footprint "HEADER_MALE_2X1"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.54 180)
+		(unlocked yes)
+		(layer "User.1")
+		(uuid "b4363903-4b73-465f-aa37-fcb0a07d8f5f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HEADER_MALE_2X1"
+		(at 0 2.54 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "43239181-8ce7-4647-9be8-5092cc273c04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "5e9b544b-f73e-408c-82a5-25fa6a1c202d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "82c3d8f4-5a3a-4587-8138-33e6a9f412d5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "70440eb8-8115-4d68-b444-050bb581a8d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(fp_rect
+		(start 2.54 1.27)
+		(end -2.54 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "f4ce3651-7cb3-4991-b343-743186654529")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4.04 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "815029e2-f364-400e-931d-502809b2d9b0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.27 0 180)
+		(size 1.524 1.524)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(uuid "643b9730-0756-47bd-b4dc-53e9af42c7d7")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0 180)
+		(size 1.524 1.524)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(uuid "d1f875be-685b-41f1-93e7-9f7a709ef2af")
+	)
+	(model "${TAVU_KICAD_LIB}/e-radionica.com footprinti.3dshapes/2x_Male_Pin_2.54_mm.STEP"
+		(offset
+			(xyz -2.9 11.4 -5.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

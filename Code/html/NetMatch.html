@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.1">
+<title>NetMatch API documentation</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>NetMatch</code></h1>
+</header>
+<section id="section-intro">
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="NetMatch.NetMatching"><code class="flex name class">
+<span>class <span class="ident">NetMatching</span></span>
+<span>(</span><span>node_arr, net)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>data structure of NetMatching class
+nodes - array of nodes in net, nodes struct: {ref:, pin:, footprint:}
+net - str name of net</p>
+<pre><code>(set through run_cm_on_nodes)
+cm_data - component match data for each component reached by nodes of net
+
+(set through process_PCB_png_files or initialize_vars fxn)
+mask_rgb (2D array) - solder mask image
+</code></pre>
+<p>mask_contours (array) - array of contours for solderable pads
+pcb_rgb (2D array) - image of full PCB with traces
+trace_contours (array) - array of all contours in the PCB image (connected parts)</p>
+<p>init function for net matching
+node_arr - array of nodes in net, nodes struct: {ref:, pin:, footprint:}
+net - str name of net</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class NetMatching():
+        &#39;&#39;&#39;
+        data structure of NetMatching class
+        nodes - array of nodes in net, nodes struct: {ref:, pin:, footprint:}
+        net - str name of net
+
+        (set through run_cm_on_nodes)
+        cm_data - component match data for each component reached by nodes of net
+        
+        (set through process_PCB_png_files or initialize_vars fxn)
+        mask_rgb (2D array) - solder mask image
+    mask_contours (array) - array of contours for solderable pads
+        pcb_rgb (2D array) - image of full PCB with traces
+    trace_contours (array) - array of all contours in the PCB image (connected parts)
+        &#39;&#39;&#39;
+        def __init__(self, node_arr, net):
+                &#39;&#39;&#39;
+                init function for net matching
+                node_arr - array of nodes in net, nodes struct: {ref:, pin:, footprint:}
+                net - str name of net
+                &#39;&#39;&#39;
+                self.nodes = node_arr
+                self.net = net
+
+                #output = os.path.dirname(__file__) + &#34;/temp&#34;
+                
+                #self.traces_file = output + &#34;/traces.png&#34;
+
+                self.cm_data = {}
+
+        def process_PCB_png_files(self, mask_file, traces_file):
+                &#39;&#39;&#39;
+                process PCB png files (for mask and traces)
+                mask_file (str) - path to mask png for pcb
+                traces_file (str)- path to traces png for pcb
+
+                Sets:
+                self.mask_rgb (2D array) - solder mask image
+        self.mask_contours (array) - array of contours for solderable pads
+                self.pcb_rgb (2D array) - image of full PCB with traces
+        self.trace_contours (array) - array of all contours in the PCB image (connected parts)
+                &#39;&#39;&#39;
+
+                self.pcb_rgb = cv2.imread(traces_file)                                                          
+                self.mask_rgb = cv2.imread(mask_file)
+
+                m_img_grey = cv2.cvtColor(self.mask_rgb, cv2.COLOR_BGR2GRAY)
+                inv_m_img_grey = cv2.bitwise_not(m_img_grey)
+                self.mask_contours, hierarchy = cv2.findContours(inv_m_img_grey, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+
+                self.pad_map = gen_pad_map(self.mask_contours)
+
+                t_img_grey = cv2.cvtColor(self.pcb_rgb, cv2.COLOR_BGR2GRAY)
+                t_inv_img_grey = cv2.bitwise_not(t_img_grey)
+                self.trace_contours, trace_hierarchy = cv2.findContours(t_img_grey, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+
+                self.trace_map = connected_pads(self.pad_map, self.trace_contours, trace_hierarchy, t_inv_img_grey)
+
+
+        def initialize_pcb_vars(self, mask_rgb, mask_contours, pcb_rgb, trace_contours, pad_map, trace_map):
+                &#34;&#34;&#34;
+                initialize img and contour info from pcb directly (useful to reduce redundant processing)
+
+                Parameters:
+                mask_rgb (2D array) - solder mask image
+                mask_contours (array) - array of contours for solderable pads
+                pcb_rgb (2D array) - image of full PCB with traces
+                trace_contours (array) - array of all contours in the PCB image (connected parts)
+                pad_map (dict) - each pad with corresponding pad center
+                trace_map (dict) - each trace with corresponding pads within trace
+
+                &#34;&#34;&#34;
+
+                self.mask_rgb = mask_rgb
+                self.mask_contours = mask_contours
+                self.pcb_rgb = pcb_rgb 
+                self.trace_contours = trace_contours
+                self.pad_map = pad_map
+                self.trace_map = trace_map
+
+        def run_cm_on_nodes(self, temp_dir, kicad_cli, footprints_dir):
+                &#34;&#34;&#34;
+        Runs Component Matching on each component within Net
+                
+                Parameters:
+        temp_dir (str) - directory where to output temp image files 
+        kicad_cli (str) - path to access kicad command line interface tool
+        footprints_dir (str) - path to the directory of kicad footprints
+        
+        
+        Effects:
+        NetMatching object property cm_data (dict) component matching information
+        
+        &#34;&#34;&#34;
+
+                print(f&#39;RUNNING COMPONENT MATCHING FOR NODES ON NET: {self.net}&#39;)
+                
+                # go through each component (node) represented in this net
+                # make sure you don&#39;t do component matching twice (i.e., in the case of two pins from the same component being connected)
+                for node in self.nodes:
+                        # check if component already generated for cm_data
+                        if node[&#39;ref&#39;] in self.cm_data.keys():
+                                #this component was already in cm_data
+                                self.cm_data[node[&#39;ref&#39;]][&#39;pins&#39;].append(node[&#39;pin&#39;])
+                        else:
+                                footprint = node[&#39;footprint&#39;]
+                                footprint_arr = footprint.split(&#34;:&#34;)
+                                fp_parent_file = footprints_dir + footprint_arr[0] + &#34;.pretty&#34;
+
+                                if not os.path.isfile(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;):
+                                        complete = subprocess.run([kicad_cli, &#34;fp&#34;, &#34;export&#34;, &#34;svg&#34;, fp_parent_file, &#34;-o&#34;, temp_dir, &#34;--fp&#34;, footprint_arr[1], &#34;--black-and-white&#34;, &#34;-l&#34;, &#34;F.Cu&#34;])
+                                        
+                                        gen_footprint_PNG(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.svg&#34;)
+                                
+                                cm = ComponentMatching()
+                                cm.initialize_pcb_vars(self.mask_rgb, self.mask_contours, self.pcb_rgb, self.trace_contours, self.pad_map, self.trace_map)
+                                cm.initialize_fp_from_file(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;, fp_parent_file + &#34;/&#34; + footprint_arr[1] + &#34;.kicad_mod&#34;)
+                                matches = cm.get_matches()
+                                
+                                ref = node[&#39;ref&#39;]
+                                self.cm_data[node[&#39;ref&#39;]] = {&#39;pins&#39;: [node[&#39;pin&#39;]], &#39;matches&#39;: matches}
+
+        def run_cm_via_traces(self, temp_dir, kicad_cli, footprints_dir):
+                &#34;&#34;&#34;
+        Runs Component Matching on each component within Net but through a trace-centric approach (only looks at component matches for relevant traces)
+                
+                Parameters:
+        temp_dir (str) - directory where to output temp image files 
+        kicad_cli (str) - path to access kicad command line interface tool
+        footprints_dir (str) - path to the directory of kicad footprints
+        
+        
+        Effects:
+        NetMatching object property cm_data (dict) component matching information
+
+        Returns:
+        net_match_array (array) - unprocessed matches for each &#34;trace&#34; match
+        
+        &#34;&#34;&#34;
+                self.nodes.sort(key=lambda x: x[&#39;total pins&#39;], reverse=True)
+
+                starting_node = self.nodes[0]
+
+                footprint = starting_node[&#39;footprint&#39;]
+                footprint_arr = footprint.split(&#34;:&#34;)
+                fp_parent_file = footprints_dir + footprint_arr[0] + &#34;.pretty&#34;
+
+                if not os.path.isfile(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;):
+                        complete = subprocess.run([kicad_cli, &#34;fp&#34;, &#34;export&#34;, &#34;svg&#34;, fp_parent_file, &#34;-o&#34;, temp_dir, &#34;--fp&#34;, footprint_arr[1], &#34;--black-and-white&#34;, &#34;-l&#34;, &#34;F.Cu&#34;])
+                
+                        gen_footprint_PNG(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.svg&#34;)
+                
+                cm = ComponentMatching()
+                cm.initialize_pcb_vars(self.mask_rgb, self.mask_contours, self.pcb_rgb, self.trace_contours, self.pad_map, self.trace_map)
+                cm.initialize_fp_from_file(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;, fp_parent_file + &#34;/&#34; + footprint_arr[1] + &#34;.kicad_mod&#34;)
+                matches = cm.get_matches()
+                cm.add_traces_data_to_matches(matches)
+
+                self.cm_data[starting_node[&#39;ref&#39;]] = {&#39;pins&#39;: [starting_node[&#39;pin&#39;]], &#39;matches&#39;: matches}
+
+                
+                ref = starting_node[&#39;ref&#39;]
+
+                # make sure all pins touched within net are met
+                for node in self.nodes[1:]:
+                        if node[&#39;ref&#39;] == ref:
+                                # add pin 
+                                self.cm_data[node[&#39;ref&#39;]][&#39;pins&#39;].append(node[&#39;pin&#39;])
+                        else:
+                                break
+                
+                f_matches = []
+                # look at these initial component matches 
+                for init_cm in self.cm_data[ref][&#39;matches&#39;]:
+                        # consider first pin in array
+                        init_pin = self.cm_data[ref][&#39;pins&#39;][0]
+
+                        net_traces = init_cm.touched_traces_dict[int(init_pin)]
+
+                        # look at subsequent pins needed on this component for this net, are they within these traces?
+
+                        if len(self.cm_data[ref][&#39;pins&#39;]) &gt; 1:
+                                for subs_pin in self.cm_data[ref][&#39;pins&#39;][1:]:
+                                        subs_traces = init_cm.touched_traces_dict[int(subs_pin)]
+                                        connected_to_net_trace = False
+                                        for subs_trace in subs_traces:
+                                                if subs_trace in net_traces:
+                                                        connected_to_net_trace = True
+
+                                        if connected_to_net_trace:
+                                                f_matches.append(init_cm)
+                        else:
+                                f_matches.append(init_cm)
+
+
+                self.cm_data[ref][&#39;matches&#39;] = f_matches
+
+                #create data structure to keep track of multi-pin components
+                cm_pin_dict = {}
+
+                for node in self.nodes:
+                        if node[&#39;ref&#39;] in cm_pin_dict.keys():
+                                cm_pin_dict[node[&#39;ref&#39;]].append(node[&#39;pin&#39;])
+                        else:
+                                cm_pin_dict[node[&#39;ref&#39;]] = [node[&#39;pin&#39;]]
+
+                net_match_array = []
+                
+                
+
+                # now look at the rest of components
+                for init_cm in self.cm_data[ref][&#39;matches&#39;]:
+                        
+                        net_traces = []
+
+                        for i_pin in self.cm_data[ref][&#39;pins&#39;]:
+                                for t_trace in init_cm.touched_traces_dict[int(init_pin)]:
+                                        net_traces.append(t_trace)
+
+                        #loop through relevant traces
+
+                        for trace in net_traces:
+                                trace_node_match_arr = [{&#39;ref&#39;: ref, &#39;matches&#39;: [init_cm], &#39;pins&#39;: cm_pin_dict[ref]}]
+                                touched_refs = [ref]
+                                for node in self.nodes[(len(self.cm_data[ref][&#39;pins&#39;])):]:
+                                        
+                                        if node[&#39;ref&#39;] not in touched_refs:
+                                                # run cm
+
+                                                footprint = node[&#39;footprint&#39;]
+                                                footprint_arr = footprint.split(&#34;:&#34;)
+                                                fp_parent_file = footprints_dir + footprint_arr[0] + &#34;.pretty&#34;
+
+                                                if not os.path.isfile(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;):
+                                                        complete = subprocess.run([kicad_cli, &#34;fp&#34;, &#34;export&#34;, &#34;svg&#34;, fp_parent_file, &#34;-o&#34;, temp_dir, &#34;--fp&#34;, footprint_arr[1], &#34;--black-and-white&#34;, &#34;-l&#34;, &#34;F.Cu&#34;])
+
+                                                        gen_footprint_PNG(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.svg&#34;)
+
+                                                cm.initialize_fp_from_file(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;, fp_parent_file + &#34;/&#34; + footprint_arr[1] + &#34;.kicad_mod&#34;)
+                                                
+                                                matches = cm.get_matches_on_trace(trace, cm_pin_dict[node[&#39;ref&#39;]], ignore_pad_arr=init_cm.pad_list)
+                                                if len(matches) &gt; 0:
+                                                        trace_node_match_arr.append({&#39;ref&#39;: node[&#39;ref&#39;],&#39;matches&#39;: matches, &#39;pins&#39;: cm_pin_dict[node[&#39;ref&#39;]]})
+                                                touched_refs.append(node[&#39;ref&#39;])
+                                net_match_array.append({&#39;trace&#39;: trace, &#39;node_arr&#39;: trace_node_match_arr, &#39;net&#39;: self.net})
+
+                return net_match_array
+
+        
+        def run_net_cms_from_cm(self, temp_dir, kicad_cli, footprints_dir, init_match, ref):
+                &#34;&#34;&#34;
+        Runs component matching on components touched by net but only for specific component specified
+
+                Parameters:
+        temp_dir (str) - directory where to output temp image files 
+        kicad_cli (str) - path to access kicad command line interface tool
+        footprints_dir (str) - path to the directory of kicad footprints
+        init_match (ComponentMatch) - match to run net finding along
+        ref (str) - reference of component 
+        
+        
+        Effects:
+        NetMatching object property cm_data (dict) component matching information
+
+        Returns:
+        net_match_array (array) - possible net matches for this initial component match
+        
+        &#34;&#34;&#34;
+                self.nodes.sort(key=lambda x: x[&#39;total pins&#39;], reverse=True)
+
+                init_pins = []
+
+        # make sure all pins touched within net are met
+                for node in self.nodes:
+                        if node[&#39;ref&#39;] == ref:
+                                # add pin 
+                                init_pins.append(node[&#39;pin&#39;])
+
+                # consider first pin in array
+                init_pin = init_pins[0]
+                if int(init_pin) not in init_match.touched_traces_dict.keys():
+                        return [] #malformed initial match
+                net_traces = init_match.touched_traces_dict[int(init_pin)]
+
+                # look at subsequent pins needed on this component for this net, are they within these traces?
+
+                if len(init_pins) &gt; 1:
+                        for subs_pin in init_pins[1:]:
+                                if int(subs_pin) not in init_match.touched_traces_dict.keys():
+                                        return []
+                                subs_traces = init_match.touched_traces_dict[int(subs_pin)]
+                                connected_to_net_trace = False
+                                for subs_trace in subs_traces:
+                                        if subs_trace in net_traces:
+                                                connected_to_net_trace = True
+
+                                if not connected_to_net_trace:
+                                        return [] #this match doesn&#39;t contain connections across necessary pins
+
+                #create data structure to keep track of multi-pin components
+                cm_pin_dict = {}
+
+                for node in self.nodes:
+                        if node[&#39;ref&#39;] in cm_pin_dict.keys():
+                                cm_pin_dict[node[&#39;ref&#39;]].append(node[&#39;pin&#39;])
+                        else:
+                                cm_pin_dict[node[&#39;ref&#39;]] = [node[&#39;pin&#39;]]
+
+                net_match_array = []
+
+                net_traces = []
+
+                for i_pin in init_pins:
+                        for t_trace in init_match.touched_traces_dict[int(i_pin)]:
+                                net_traces.append(t_trace)
+
+                # initialize component matching
+                cm = ComponentMatching()
+                cm.initialize_pcb_vars(self.mask_rgb, self.mask_contours, self.pcb_rgb, self.trace_contours, self.pad_map, self.trace_map)
+
+                #loop through relevant traces
+
+                for trace in net_traces:
+                        trace_node_match_arr = [{&#39;ref&#39;: ref, &#39;matches&#39;: [init_match], &#39;pins&#39;: cm_pin_dict[ref]}]
+                        touched_refs = [ref]
+                        
+                        for node in self.nodes:
+                                
+                                if node[&#39;ref&#39;] not in touched_refs:
+                                        # run cm
+                                        footprint = node[&#39;footprint&#39;]
+                                        footprint_arr = footprint.split(&#34;:&#34;)
+                                        fp_parent_file = footprints_dir + footprint_arr[0] + &#34;.pretty&#34;
+
+                                        if not os.path.isfile(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;):
+                                                complete = subprocess.run([kicad_cli, &#34;fp&#34;, &#34;export&#34;, &#34;svg&#34;, fp_parent_file, &#34;-o&#34;, temp_dir, &#34;--fp&#34;, footprint_arr[1], &#34;--black-and-white&#34;, &#34;-l&#34;, &#34;F.Cu&#34;])
+
+                                                gen_footprint_PNG(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.svg&#34;)
+
+                                        cm.initialize_fp_from_file(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;, fp_parent_file + &#34;/&#34; + footprint_arr[1] + &#34;.kicad_mod&#34;)
+                                        
+                                        matches = cm.get_matches_on_trace(trace, cm_pin_dict[node[&#39;ref&#39;]], ignore_pad_arr=init_match.pad_list)
+                                        if len(matches) &gt; 0:
+                                                trace_node_match_arr.append({&#39;ref&#39;: node[&#39;ref&#39;],&#39;matches&#39;: matches, &#39;pins&#39;: cm_pin_dict[node[&#39;ref&#39;]]})
+                                        touched_refs.append(node[&#39;ref&#39;])
+                        net_match_array.append({&#39;trace&#39;: trace, &#39;node_arr&#39;: trace_node_match_arr, &#39;net&#39;: self.net})
+
+                return net_match_array
+
+
+        def add_cm_data(self, full_cm_data):
+                &#39;&#39;&#39;
+                        Adds component match data from a larger set of component match data (i.e., when running a full circuit match)
+
+                        Parameters:
+                        full_cm_data (dict) - large dict of component match information (to be selectively used)
+
+                        Effects
+                        self.cm_data (dict) - { &#39;&lt;ref&gt;&#39;: {&#39;pins&#39;: &#39;&#39;, &#39;matches&#39;: []}}
+                &#39;&#39;&#39;
+
+                for node in self.nodes:
+                        if node[&#39;ref&#39;] in self.cm_data.keys():
+                                self.cm_data[node[&#39;ref&#39;]][&#39;pins&#39;].append(node[&#39;pin&#39;])
+                        else:
+                                self.cm_data[node[&#39;ref&#39;]] = {&#39;pins&#39;: [node[&#39;pin&#39;]], &#39;matches&#39;: full_cm_data[node[&#39;ref&#39;]][&#39;matches&#39;]}
+
+                
+        def search_net_matches(self):
+                &#34;&#34;&#34;
+        Creates a full net match array starting from first component (i.e. one with the least matches)
+
+        Returns:
+        net_matches (array): array of the trace ID and all resulting matches relevant for this net
+        
+                &#34;&#34;&#34;
+
+                # sort component list by number of matches
+
+                ref_list = list(self.cm_data.keys())
+                ref_list.sort(key=lambda x: len(self.cm_data[x][&#39;matches&#39;]))
+
+                net_matches = []
+                
+                # start with first component 
+                component = self.cm_data[ref_list[0]] #has all matches and pins needed for net
+
+                pin = component[&#39;pins&#39;][0] # start with just one pin, check for others later
+                for match in component[&#39;matches&#39;]:
+                        # plural because multiple pads might be covered for one pin
+                        p_IDs = match.pad_IDs[int(pin)]
+                        # go through each pad to see if it belongs to a trace that hits another nodes in net
+
+                        for p_ID in p_IDs:
+                                # run through all trace contours in pcb to see pads in trace
+                                for trace, trace_pads in self.trace_map.items():
+                                        # check if pad is in trace
+                                        if p_ID in trace_pads:
+
+                                                #potential trace, check that other pads needed are included in this trace
+                                                nodes_info = [{&#39;node&#39;:ref_list[0] + &#39;-&#39; + pin, &#39;match&#39;: match, &#39;pads&#39;: p_IDs}]
+                                                
+                                                #if there is another pin for this component that touches the NET, are there any of those pads within this NET?
+                                                if len(component[&#39;pins&#39;]) &gt; 1:
+                                                        #look at all pins after the first one
+                                                        sub_pins_connected = True
+                                                        for subsequent_pin in component[&#39;pins&#39;][1:]:
+                                                                sub_p_IDs = match.pad_IDs[int(subsequent_pin)]
+                                                                connection_present = False
+                                                                for sub_p_ID in sub_p_IDs:
+                                                                        if sub_p_ID in trace_pads:
+                                                                                connection_present = True
+                                                                                nodes_info.append({&#39;node&#39;:ref_list[0]+ &#39;-&#39; + subsequent_pin, &#39;match&#39;: match, &#39;pads&#39;: sub_p_IDs})
+
+                                                                if not connection_present:
+                                                                        sub_pins_connected = False # the subsequent pins are not connected, break from looping over subsequent pins
+                                                                        break 
+
+                                                        if not sub_pins_connected: 
+                                                                continue # the subsequent pins are not connected, go to the next trace
+
+                                                # go through other components and run similar process
+
+                                                refs_connected = True
+                                                sub_ref_match_arr = []
+
+                                                for subsequent_ref in ref_list[1:]:
+
+                                                        subsequent_component = self.cm_data[subsequent_ref]
+                                                        sub_comp_pins = subsequent_component[&#39;pins&#39;] #pins of interest on component
+                                                        
+                                                        match_for_ref_found = False
+                                                        ref_match_arr = []
+                                                        
+                                                        for sc_match in subsequent_component[&#39;matches&#39;]:
+                                                                
+                                                                sc_pins_connected = True
+                                                                pins_info = []
+                                                                for sub_comp_pin in sub_comp_pins:
+                                                                        scsp_IDs = sc_match.pad_IDs[int(sub_comp_pin)]
+                                                                        
+                                                                        pin_connection = False
+                                                                        for scsp_ID in scsp_IDs:
+                                                                                if scsp_ID in trace_pads:
+                                                                                        pin_connection = True
+                                                                                        pins_info.append({&#39;node&#39;: subsequent_ref + &#39;-&#39; + sub_comp_pin, &#39;match&#39;: sc_match, &#39;pads&#39;: scsp_IDs})
+                                                                        if not pin_connection:
+                                                                                sc_pins_connected = False 
+                                                                                break # a pin is not properly connected
+                                                                if sc_pins_connected:
+                                                                        # component is properly connected
+                                                                        # this is a match !
+                                                                        # pins_info contains this match
+                                                                        for i_pin in pins_info:
+                                                                                ref_match_arr.append(i_pin)
+                                                                        match_for_ref_found = True
+
+                                                        if not match_for_ref_found:
+                                                                refs_connected = False
+                                                                break
+                                                        else:
+                                                                sub_ref_match_arr.append(ref_match_arr)
+
+                                                if refs_connected:
+                                                        nodes_array = []
+                                                        for node_info in nodes_info:
+                                                                nodes_array.append([node_info])
+                                                        for ref_match in sub_ref_match_arr:
+                                                                nodes_array.append(ref_match)
+                                                        
+                                                        net_matches.append({&#39;trace&#39;: trace, &#39;net&#39;: self.net, &#39;nodes array&#39;: nodes_array})
+                return net_matches
+
+        def process_matches(self, net_matches):
+                &#34;&#34;&#34;
+        Processes full array of matches to create all possible combinations of net matches
+
+        Returns:
+        n_matches (array): array of the component match combinations within a net match
+        
+                &#34;&#34;&#34;
+                n_matches = []
+                for n_match in net_matches:
+                        n_refs = len(n_match[&#39;nodes array&#39;])
+
+                        
+                        trace = n_match[&#39;trace&#39;]
+
+                        indices = [0 for i in range(n_refs)]
+                        
+                        while 1:
+                                nodes_arr = []
+                                for i in range(n_refs):
+                                        nodes_arr.append(n_match[&#39;nodes array&#39;][i][indices[i]])
+
+                                n_match_dict = {&#39;trace&#39;: trace, &#39;nodes&#39;: nodes_arr, &#39;net&#39;: n_match[&#39;net&#39;]}
+                                n_matches.append(n_match_dict)
+
+                                # find the rightmost array that has more
+                            # elements left after the current element
+                            # in that array
+                                next = n_refs-1
+
+                                while (next &gt;=0 and (indices[next] + 1 &gt;= len(n_match[&#39;nodes array&#39;][next]))):
+                                        next-=1
+
+                                if next &lt; 0:
+                                        break
+
+                                indices[next] += 1
+
+                                for i in range(next + 1, n_refs):
+                                        indices[i] = 0
+
+                return n_matches
+
+        def process_trace_matches(self, net_matches):
+                &#34;&#34;&#34;
+        Processes full array of matches to create all possible combinations of net matches (handles trace-based data structure)
+
+        Returns:
+        n_matches (array): array of the component match combinations within a net match
+        
+                &#34;&#34;&#34;
+                n_matches = []
+                for n_match in net_matches:
+
+                        n_refs = len(n_match[&#39;node_arr&#39;])
+                        trace = n_match[&#39;trace&#39;]
+
+                        indices = [0 for i in range(n_refs)]
+                        
+                        while 1:
+                                nodes_arr = []
+                                for i in range(n_refs):
+                                        node_ref = n_match[&#39;node_arr&#39;][i][&#39;ref&#39;]
+                                        node_match = n_match[&#39;node_arr&#39;][i][&#39;matches&#39;][indices[i]]
+                                        pin_arr = n_match[&#39;node_arr&#39;][i][&#39;pins&#39;]
+                                        for pin in pin_arr:
+                                                nodes_arr.append({&#39;node&#39;: node_ref + &#39;-&#39; + pin, &#39;match&#39;: node_match, &#39;pads&#39;: node_match.pad_IDs[int(pin)]})
+
+                                n_match_dict = {&#39;trace&#39;: trace, &#39;nodes&#39;: nodes_arr, &#39;net&#39;: n_match[&#39;net&#39;]}
+                                n_matches.append(n_match_dict)
+                                
+                                next = n_refs-1
+
+                                while (next &gt;= 0 and (indices[next] + 1 &gt;= len(n_match[&#39;node_arr&#39;][next][&#39;matches&#39;]))):
+                                        next -=1
+
+                                if next &lt; 0:
+                                        break 
+
+                                indices[next] += 1
+
+                                for i in range(next + 1, n_refs):
+                                        indices[i] = 0
+
+
+                return n_matches
+
+        def get_complete_matches(self, matches, num_nodes):
+                &#39;&#39;&#39;
+                        Filter through matches to create array that only has *full* net matches
+
+                Parameters:
+                matches (array): array of valid net matches
+                num_nets (int): number of nodes found in net
+
+                Returns:
+                complete_matches (array): array of matches that contain *all* nodes in the net
+                &#39;&#39;&#39;
+
+                complete_matches = []
+
+                for match in matches:
+                        if len(match[&#39;nodes&#39;]) == num_nodes:
+                                complete_matches.append(match)
+
+                return complete_matches
+
+        def identify_duplicate_match(self, net_match1, net_match2):
+                &#39;&#39;&#39;
+                        Helper function for &#39;filter_matches&#39;. Assess if these net matches are the same
+
+                        Parameters:
+                        net_match1
+                        net_match2
+                        
+                        Returns:
+                        bool - True if this is a duplicate, False otherwise
+                &#39;&#39;&#39;
+
+                # (1) are traces different
+                if net_match1[&#39;trace&#39;] != net_match2[&#39;trace&#39;]:
+                        return False
+                else:
+                        # (2) length of nodes is different
+                        if len(net_match1[&#39;nodes&#39;]) != len(net_match2[&#39;nodes&#39;]):
+                                return False
+                        else:
+                                # (3) component nodes are the same
+                                for nm1_node in net_match1[&#39;nodes&#39;]:
+                                        nm1_ID = nm1_node[&#39;node&#39;]
+                                        nm1_match = nm1_node[&#39;match&#39;]
+                                        nm1_pads = nm1_node[&#39;pads&#39;]
+
+                                        nm1_node_not_present = True
+                                        for nm2_node in net_match2[&#39;nodes&#39;]:
+                                                if nm1_ID == nm2_node[&#39;node&#39;]:
+                                                        nm1_node_not_present = False
+
+                                                        if nm1_match.pad_IDs != nm2_node[&#39;match&#39;].pad_IDs:
+                                                                
+                                                                return False
+
+                                                        if nm1_pads != nm2_node[&#39;pads&#39;]:
+                                                                
+                                                                return False
+
+                                        if nm1_node_not_present:
+                                                return False #that node is not in the second net match!
+
+                return True
+
+        def filter_matches(self, net_matches):
+                &#34;&#34;&#34;
+        Filters full array of net matches to make sure there are no conflicting pads OR net already represented
+
+        Returns:
+        filtered_matches (array): array of the net matches that are valid
+        
+                &#34;&#34;&#34;
+
+                filtered_matches = []
+                for n_match in net_matches:
+                        duplicate_exists = False
+                        for f_match in filtered_matches:
+                                #loop through to make sure there are no duplicates
+                                if self.identify_duplicate_match(f_match, n_match):
+                                        duplicate_exists = True
+                                        break
+                        if duplicate_exists:
+                                continue
+
+                        nodes = n_match[&#39;nodes&#39;]
+                        cm_dict = {}
+                        pads_touched = []
+                        bad_match = False
+                        for node in nodes:
+                                ref = node[&#39;node&#39;].split(&#39;-&#39;)[0]
+                                if ref in cm_dict.keys():
+                                        if node[&#39;match&#39;] != cm_dict[ref]:
+                                                return False
+                                else:
+                                        cm = node[&#39;match&#39;]
+                                        pad_IDs = cm.pad_IDs.values()
+                                        for pad_arr in pad_IDs:
+                                                for pad in pad_arr:
+                                                        if pad in pads_touched:
+                                                                bad_match = True
+                                                        else:
+                                                                pads_touched.append(pad)
+                                        cm_dict[ref] = cm
+                        if not bad_match:
+                                filtered_matches.append(n_match)
+
+                return filtered_matches
+
+        def find_wire_interventions(self, match, missing_node_IDs, temp_dir, kicad_cli, footprints_dir):
+                &#39;&#39;&#39;
+                search for places to add a wire connection
+
+                Parameters:
+                match - Net match dict 
+                missing_node_IDs - array of missing node IDs
+                temp_dir (str) - directory where to output temp image files 
+        kicad_cli (str) - path to access kicad command line interface tool
+        footprints_dir (str) - path to the directory of kicad footprints
+
+                Returns:
+                match - updated with intervention or None
+                &#39;&#39;&#39;
+
+                existing_refs = []
+                existing_refs_dict = {}
+                touched_traces = []
+                for match_node in match[&#39;nodes&#39;]:
+                        m_ref = match_node[&#39;node&#39;].split(&#39;-&#39;)[0]
+                        if m_ref not in existing_refs:
+                                existing_refs.append(m_ref)
+                                if m_ref not in existing_refs_dict.keys():
+                                        existing_refs_dict[m_ref] = [match_node[&#39;node&#39;]]
+                                else:
+                                        existing_refs_dict[m_ref].append(match_node[&#39;node&#39;])
+
+
+                for missing_node in missing_node_IDs:
+                        ref = missing_node.split(&#39;-&#39;)[0]
+                        pin = missing_node.split(&#39;-&#39;)[1]
+
+                        footprint = &#39;&#39;
+                        # get element footprint
+                        for node in self.nodes:
+                                if node[&#39;ref&#39;] == ref:
+                                        footprint = node[&#39;footprint&#39;]
+                                        break
+
+                        if len(footprint) &gt; 0:
+                                footprint_arr = footprint.split(&#34;:&#34;)
+                                fp_parent_file = footprints_dir + footprint_arr[0] + &#34;.pretty&#34;
+                                if not os.path.isfile(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;):
+                                        complete = subprocess.run([kicad_cli, &#34;fp&#34;, &#34;export&#34;, &#34;svg&#34;, fp_parent_file, &#34;-o&#34;, temp_dir, &#34;--fp&#34;, footprint_arr[1], &#34;--black-and-white&#34;, &#34;-l&#34;, &#34;F.Cu&#34;])
+                                                                                                
+                                        gen_footprint_PNG(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.svg&#34;)
+
+
+                        #does this ref already exist in the match?
+
+                        if ref in existing_refs:
+                                # add wire between pins of that ref
+                                match[&#39;incomplete&#39;] = True
+                                match[&#39;interventions&#39;] = {&#39;add wire&#39;: [missing_node] + existing_refs_dict[ref]}
+
+                        else:
+                                # search for a Component Match for that ref on other relevant traces
+                                cm_matches = []
+
+                                #exclude traces that are touched by other net match components
+                                touched_traces = [match[&#39;trace&#39;]]
+                                for match_node in match[&#39;nodes&#39;]:
+                                        cm = match_node[&#39;match&#39;]
+                                        touched_traces += cm.touched_traces_list
+
+                                for trace_ID, trace_pads in self.trace_map.items():
+                                        if trace_ID not in touched_traces:
+                                                if len(trace_pads) &gt;= 1: # at least one possible match possible
+                                                        cm = ComponentMatching()
+                                                        cm.initialize_pcb_vars(self.mask_rgb, self.mask_contours, self.pcb_rgb, self.trace_contours, self.pad_map, self.trace_map)
+                                                        cm.initialize_fp_from_file(temp_dir + &#34;/&#34; + footprint_arr[1] + &#34;.png&#34;, fp_parent_file + &#34;/&#34; + footprint_arr[1] + &#34;.kicad_mod&#34;)
+
+                                                        matches = cm.get_matches_on_trace(trace_ID, [pin])
+                                                        cm.add_traces_data_to_matches(matches)
+                                                        cm_matches += matches
+                                if len(cm_matches) &gt; 0:
+                                        match[&#39;incomplete&#39;] = True 
+                                        match[&#39;interventions&#39;] = {&#39;add wire&#39;: {&#39;missing node&#39;: missing_node, &#39;cmpnt matches&#39;: cm_matches}}
+
+                if match[&#39;incomplete&#39;]:
+                        return match
+                else:
+                        return None
+
+
+
+
+        def visualize_net_matches(self, net_matches):
+                &#34;&#34;&#34;
+        Quick visualization method for checking net matches 
+        
+                &#34;&#34;&#34;
+
+                for match in net_matches:
+                        m_img_rgb = self.pcb_rgb.copy()
+                        trace = match[&#39;trace&#39;]
+                        nodes = match[&#39;nodes&#39;]
+
+                        for node in nodes:
+                                
+                                cm = node[&#39;match&#39;]
+                                pad_IDs = cm.pad_IDs.values()
+                                
+                                for pad in node[&#39;pads&#39;]:
+                                        cv2.drawContours(m_img_rgb, self.mask_contours, pad, (0, 255,0), -1)
+
+                                for contour in cm.fp_contours:
+                                        cv2.drawContours(m_img_rgb, [contour], 0, (0, 0, 255), 1, offset=cm.coordinates)
+
+                        if &#39;interventions&#39; in match.keys():
+                                if isinstance(match[&#39;interventions&#39;], list):
+                                        for intervention in match[&#39;interventions&#39;]:
+                                                if &#39;add wire&#39; in intervention.keys():
+                                                        wire_info = intervention[&#39;add wire&#39;]
+
+                                                        
+                                                        missing_node = wire_info[&#39;missing node&#39;]
+                                                        pin = missing_node.split(&#39;-&#39;)[1]
+                                                        if &#39;cmpnt matches&#39; in wire_info.keys():
+                                                                for cmpnt_match in wire_info[&#39;cmpnt matches&#39;]:
+                                                                        cpy_m_img_rgb = m_img_rgb.copy()
+                                                                        pad_IDs = cmpnt_match.pad_IDs[int(pin)]
+                                                                        for pad_ID in pad_IDs:
+                                                                                cv2.drawContours(cpy_m_img_rgb, self.mask_contours, pad_ID, (0, 255, 255), -1)
+                                                                        cv2.imshow(&#34;intervention net&#34;, cpy_m_img_rgb)
+                                                                        key = cv2.waitKeyEx(0)
+                                                        elif &#39;cmpnt match&#39; in wire_info.keys():
+                                                                cmpnt_match = wire_info[&#39;cmpnt match&#39;]
+                                                                cpy_m_img_rgb = m_img_rgb.copy()
+                                                                pad_IDs = cmpnt_match.pad_IDs[int(pin)]
+                                                                for pad_ID in pad_IDs:
+                                                                        cv2.drawContours(cpy_m_img_rgb, self.mask_contours, pad_ID, (0, 255, 255), -1)
+                                                                cv2.imshow(&#34;intervention net&#34;, cpy_m_img_rgb)
+                                                                key = cv2.waitKeyEx(0)
+                                elif isinstance(match[&#39;interventions&#39;], dict):
+                                        if &#39;add wire&#39; in match[&#39;interventions&#39;].keys():
+                                                wire_info = match[&#39;interventions&#39;][&#39;add wire&#39;]
+
+                                                
+                                                missing_node = wire_info[&#39;missing node&#39;]
+                                                pin = missing_node.split(&#39;-&#39;)[1]
+                                                if &#39;cmpnt matches&#39; in wire_info.keys():
+                                                        for cmpnt_match in wire_info[&#39;cmpnt matches&#39;]:
+                                                                cpy_m_img_rgb = m_img_rgb.copy()
+                                                                pad_IDs = cmpnt_match.pad_IDs[int(pin)]
+                                                                for pad_ID in pad_IDs:
+                                                                        cv2.drawContours(cpy_m_img_rgb, self.mask_contours, pad_ID, (0, 255, 255), -1)
+                                                                cv2.imshow(&#34;intervention net&#34;, cpy_m_img_rgb)
+                                                                key = cv2.waitKeyEx(0)
+                                                elif &#39;cmpnt match&#39; in wire_info.keys():
+                                                        cmpnt_match = wire_info[&#39;cmpnt match&#39;]
+                                                        cpy_m_img_rgb = m_img_rgb.copy()
+                                                        pad_IDs = cmpnt_match.pad_IDs[int(pin)]
+                                                        for pad_ID in pad_IDs:
+                                                                cv2.drawContours(cpy_m_img_rgb, self.mask_contours, pad_ID, (0, 255, 255), -1)
+                                                        cv2.imshow(&#34;intervention net&#34;, cpy_m_img_rgb)
+                                                        key = cv2.waitKeyEx(0)
+                        else:
+                                cv2.imshow(match[&#39;net&#39;], m_img_rgb)
+                                key = cv2.waitKeyEx(0)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="NetMatch.NetMatching.add_cm_data"><code class="name flex">
+<span>def <span class="ident">add_cm_data</span></span>(<span>self, full_cm_data)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Adds component match data from a larger set of component match data (i.e., when running a full circuit match)</p>
+<p>Parameters:
+full_cm_data (dict) - large dict of component match information (to be selectively used)</p>
+<p>Effects
+self.cm_data (dict) - { '<ref>': {'pins': '', 'matches': []}}</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.filter_matches"><code class="name flex">
+<span>def <span class="ident">filter_matches</span></span>(<span>self, net_matches)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Filters full array of net matches to make sure there are no conflicting pads OR net already represented</p>
+<p>Returns:
+filtered_matches (array): array of the net matches that are valid</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.find_wire_interventions"><code class="name flex">
+<span>def <span class="ident">find_wire_interventions</span></span>(<span>self, match, missing_node_IDs, temp_dir, kicad_cli, footprints_dir)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>search for places to add a wire connection</p>
+<pre><code>    Parameters:
+    match - Net match dict 
+    missing_node_IDs - array of missing node IDs
+    temp_dir (str) - directory where to output temp image files
+</code></pre>
+<p>kicad_cli (str) - path to access kicad command line interface tool
+footprints_dir (str) - path to the directory of kicad footprints</p>
+<pre><code>    Returns:
+    match - updated with intervention or None
+</code></pre></div>
+</dd>
+<dt id="NetMatch.NetMatching.get_complete_matches"><code class="name flex">
+<span>def <span class="ident">get_complete_matches</span></span>(<span>self, matches, num_nodes)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Filter through matches to create array that only has <em>full</em> net matches</p>
+<p>Parameters:
+matches (array): array of valid net matches
+num_nets (int): number of nodes found in net</p>
+<p>Returns:
+complete_matches (array): array of matches that contain <em>all</em> nodes in the net</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.identify_duplicate_match"><code class="name flex">
+<span>def <span class="ident">identify_duplicate_match</span></span>(<span>self, net_match1, net_match2)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Helper function for 'filter_matches'. Assess if these net matches are the same</p>
+<p>Parameters:
+net_match1
+net_match2</p>
+<p>Returns:
+bool - True if this is a duplicate, False otherwise</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.initialize_pcb_vars"><code class="name flex">
+<span>def <span class="ident">initialize_pcb_vars</span></span>(<span>self, mask_rgb, mask_contours, pcb_rgb, trace_contours, pad_map, trace_map)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>initialize img and contour info from pcb directly (useful to reduce redundant processing)</p>
+<p>Parameters:
+mask_rgb (2D array) - solder mask image
+mask_contours (array) - array of contours for solderable pads
+pcb_rgb (2D array) - image of full PCB with traces
+trace_contours (array) - array of all contours in the PCB image (connected parts)
+pad_map (dict) - each pad with corresponding pad center
+trace_map (dict) - each trace with corresponding pads within trace</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.process_PCB_png_files"><code class="name flex">
+<span>def <span class="ident">process_PCB_png_files</span></span>(<span>self, mask_file, traces_file)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>process PCB png files (for mask and traces)
+mask_file (str) - path to mask png for pcb
+traces_file (str)- path to traces png for pcb</p>
+<pre><code>    Sets:
+    self.mask_rgb (2D array) - solder mask image
+</code></pre>
+<p>self.mask_contours (array) - array of contours for solderable pads
+self.pcb_rgb (2D array) - image of full PCB with traces
+self.trace_contours (array) - array of all contours in the PCB image (connected parts)</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.process_matches"><code class="name flex">
+<span>def <span class="ident">process_matches</span></span>(<span>self, net_matches)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Processes full array of matches to create all possible combinations of net matches</p>
+<p>Returns:
+n_matches (array): array of the component match combinations within a net match</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.process_trace_matches"><code class="name flex">
+<span>def <span class="ident">process_trace_matches</span></span>(<span>self, net_matches)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Processes full array of matches to create all possible combinations of net matches (handles trace-based data structure)</p>
+<p>Returns:
+n_matches (array): array of the component match combinations within a net match</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.run_cm_on_nodes"><code class="name flex">
+<span>def <span class="ident">run_cm_on_nodes</span></span>(<span>self, temp_dir, kicad_cli, footprints_dir)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Runs Component Matching on each component within Net</p>
+<pre><code>    Parameters:
+</code></pre>
+<p>temp_dir (str) - directory where to output temp image files
+kicad_cli (str) - path to access kicad command line interface tool
+footprints_dir (str) - path to the directory of kicad footprints</p>
+<p>Effects:
+NetMatching object property cm_data (dict) component matching information</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.run_cm_via_traces"><code class="name flex">
+<span>def <span class="ident">run_cm_via_traces</span></span>(<span>self, temp_dir, kicad_cli, footprints_dir)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Runs Component Matching on each component within Net but through a trace-centric approach (only looks at component matches for relevant traces)</p>
+<pre><code>    Parameters:
+</code></pre>
+<p>temp_dir (str) - directory where to output temp image files
+kicad_cli (str) - path to access kicad command line interface tool
+footprints_dir (str) - path to the directory of kicad footprints</p>
+<p>Effects:
+NetMatching object property cm_data (dict) component matching information</p>
+<p>Returns:
+net_match_array (array) - unprocessed matches for each "trace" match</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.run_net_cms_from_cm"><code class="name flex">
+<span>def <span class="ident">run_net_cms_from_cm</span></span>(<span>self, temp_dir, kicad_cli, footprints_dir, init_match, ref)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Runs component matching on components touched by net but only for specific component specified</p>
+<pre><code>    Parameters:
+</code></pre>
+<p>temp_dir (str) - directory where to output temp image files
+kicad_cli (str) - path to access kicad command line interface tool
+footprints_dir (str) - path to the directory of kicad footprints
+init_match (ComponentMatch) - match to run net finding along
+ref (str) - reference of component </p>
+<p>Effects:
+NetMatching object property cm_data (dict) component matching information</p>
+<p>Returns:
+net_match_array (array) - possible net matches for this initial component match</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.search_net_matches"><code class="name flex">
+<span>def <span class="ident">search_net_matches</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates a full net match array starting from first component (i.e. one with the least matches)</p>
+<p>Returns:
+net_matches (array): array of the trace ID and all resulting matches relevant for this net</p></div>
+</dd>
+<dt id="NetMatch.NetMatching.visualize_net_matches"><code class="name flex">
+<span>def <span class="ident">visualize_net_matches</span></span>(<span>self, net_matches)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Quick visualization method for checking net matches</p></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="NetMatch.NetMatching" href="#NetMatch.NetMatching">NetMatching</a></code></h4>
+<ul class="">
+<li><code><a title="NetMatch.NetMatching.add_cm_data" href="#NetMatch.NetMatching.add_cm_data">add_cm_data</a></code></li>
+<li><code><a title="NetMatch.NetMatching.filter_matches" href="#NetMatch.NetMatching.filter_matches">filter_matches</a></code></li>
+<li><code><a title="NetMatch.NetMatching.find_wire_interventions" href="#NetMatch.NetMatching.find_wire_interventions">find_wire_interventions</a></code></li>
+<li><code><a title="NetMatch.NetMatching.get_complete_matches" href="#NetMatch.NetMatching.get_complete_matches">get_complete_matches</a></code></li>
+<li><code><a title="NetMatch.NetMatching.identify_duplicate_match" href="#NetMatch.NetMatching.identify_duplicate_match">identify_duplicate_match</a></code></li>
+<li><code><a title="NetMatch.NetMatching.initialize_pcb_vars" href="#NetMatch.NetMatching.initialize_pcb_vars">initialize_pcb_vars</a></code></li>
+<li><code><a title="NetMatch.NetMatching.process_PCB_png_files" href="#NetMatch.NetMatching.process_PCB_png_files">process_PCB_png_files</a></code></li>
+<li><code><a title="NetMatch.NetMatching.process_matches" href="#NetMatch.NetMatching.process_matches">process_matches</a></code></li>
+<li><code><a title="NetMatch.NetMatching.process_trace_matches" href="#NetMatch.NetMatching.process_trace_matches">process_trace_matches</a></code></li>
+<li><code><a title="NetMatch.NetMatching.run_cm_on_nodes" href="#NetMatch.NetMatching.run_cm_on_nodes">run_cm_on_nodes</a></code></li>
+<li><code><a title="NetMatch.NetMatching.run_cm_via_traces" href="#NetMatch.NetMatching.run_cm_via_traces">run_cm_via_traces</a></code></li>
+<li><code><a title="NetMatch.NetMatching.run_net_cms_from_cm" href="#NetMatch.NetMatching.run_net_cms_from_cm">run_net_cms_from_cm</a></code></li>
+<li><code><a title="NetMatch.NetMatching.search_net_matches" href="#NetMatch.NetMatching.search_net_matches">search_net_matches</a></code></li>
+<li><code><a title="NetMatch.NetMatching.visualize_net_matches" href="#NetMatch.NetMatching.visualize_net_matches">visualize_net_matches</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.1</a>.</p>
+</footer>
+</body>
+</html>

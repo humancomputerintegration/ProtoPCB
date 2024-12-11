@@ -1,0 +1,113 @@
+(footprint "HEADER_MALE_1X1"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.54 180)
+		(unlocked yes)
+		(layer "User.1")
+		(uuid "520fda05-bfcf-4580-8726-670aced55a6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HEADER_MALE_1X1"
+		(at 0 2.54 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "272df58e-c3d0-4eee-8976-1a9e27536a95")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "b40f88d9-4f99-4a8e-923e-83f5884aaa30")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "d7fe468e-2168-4c38-9eb9-967f7843e528")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "f73cada4-dd91-4dd6-9336-39793c8c25bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(fp_rect
+		(start 1.27 1.27)
+		(end -1.27 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "fac29c07-5178-4762-8edc-99f8d315073d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4.04 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "890bc4ca-450c-4c72-a2b4-18e412658b88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0 180)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(uuid "ce699553-64c1-4e74-8020-1ea52de64922")
+	)
+	(model "${TAVU_KICAD_LIB}/e-radionica.com footprinti.3dshapes/1x_Male_Pin_2.54_mm.STEP"
+		(hide yes)
+		(offset
+			(xyz -0.35 0.35 -3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

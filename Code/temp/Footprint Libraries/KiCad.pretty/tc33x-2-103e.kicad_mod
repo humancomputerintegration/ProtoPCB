@@ -1,0 +1,130 @@
+(footprint "tc33x-2-103e"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.08 -3.24 0)
+		(unlocked yes)
+		(layer "User.1")
+		(uuid "7720836a-ce19-4fb2-9257-ee61da4d8e83")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "tc33x-2-104e"
+		(at 0.08 3.74 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17f3f5e0-d19c-46c2-95fe-cb11883cdaa5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27a9226e-b5e3-4e09-8783-aece73b7da84")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a2e13f5-b1ea-4474-8e62-36285c5c9275")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b834623-c40b-4193-b3e7-a7ac1447a3a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start -1.85 -1.9)
+		(end 1.85 1.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "6d7c682b-036d-40b3-bb68-9628144677ff")
+	)
+	(fp_rect
+		(start -1.85 -1.9)
+		(end 1.85 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "7d6d75e2-3f29-40f2-969f-9914c9f2d77e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.08 5.24 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bcd5fd85-9c61-4201-a3de-dae43583b294")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1 1.8)
+		(size 1.2 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "df63195d-185b-4f92-8faf-701b7f2c879c")
+	)
+	(pad "2" smd rect
+		(at 0 -1.45)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "40da9795-93b0-4ac2-8819-897aba33fa48")
+	)
+	(pad "3" smd rect
+		(at 1 1.8)
+		(size 1.2 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "7e4a8d86-2938-415d-93ba-bea5ad06f64c")
+	)
+	(model "${TAVU_KICAD_LIB}/e-radionica.com footprinti.3dshapes/User Library-TC-33X-2.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

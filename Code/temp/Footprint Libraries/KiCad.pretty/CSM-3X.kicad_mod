@@ -1,0 +1,117 @@
+(footprint "CSM-3X"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -1.044 2.497 0)
+		(layer "F.SilkS")
+		(uuid "ea157817-aab7-46bb-a148-20d598199afb")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "12 MHz"
+		(at 2.5 -2.5 0)
+		(layer "F.Fab")
+		(uuid "56ededce-904c-488e-a354-1e4de5010575")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "638cb54d-a873-4c28-95cd-8d363348d7ef")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31cf0221-d51d-48ed-86bf-eafdf212a700")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4bf1dda9-c24c-4c20-879a-76342a2a6236")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.5 -2)
+		(end 7 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fa20f8bf-46bd-4674-895b-8f48b166a028")
+	)
+	(fp_line
+		(start -1.5 2)
+		(end -1.5 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c31effe2-16e7-4511-872b-bc869756029b")
+	)
+	(fp_line
+		(start 7 -2)
+		(end 7 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "77f6726f-d161-44d3-902f-0de59007ac06")
+	)
+	(fp_line
+		(start 7 2)
+		(end -1.5 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8d0d2683-91ef-44c8-8223-8966a24fd027")
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 3.5 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "57b2001a-a7a5-4d28-abee-72f06b24eb13")
+	)
+	(pad "2" smd rect
+		(at 5.5 0)
+		(size 3.5 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ca3550f7-98b6-4b61-9b12-0c310d92f5d8")
+	)
+)

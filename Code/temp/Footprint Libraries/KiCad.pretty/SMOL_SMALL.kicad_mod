@@ -1,0 +1,79 @@
+(footprint "SMOL_SMALL"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 360)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "420dc213-d5e0-4d76-a65f-d83a846334a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SMOL_LOGOSMALL"
+		(at 0 0 360)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eb9b386c-1472-4871-ab09-623a9e90d298")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 360)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c5fb5b0f-855b-4613-9007-db5d8d3bac09")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 360)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc859232-de4f-4ef3-9e7c-89f5443996e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 360)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1ffe011-cad7-49ec-a0c1-6fb09961ad54")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy 0.263598 -0.643474) (xy 1.921497 1.135) (xy 1.778536 1.135) (xy 0 -0.004062) (xy -1.778536 1.135)
+			(xy -1.911497 1.135) (xy -0.254999 -0.641968) (xy -0.255 -0.655) (xy 0.252071 -0.655)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "728e606f-9711-4d25-906a-53a5915ac1fd")
+	)
+)

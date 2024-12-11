@@ -1,0 +1,163 @@
+(footprint "1210C"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.2 0)
+		(unlocked yes)
+		(layer "User.1")
+		(uuid "c8283e3b-b733-4985-98f7-7de5a0d989e3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "12101C335K4T2A"
+		(at 0 2.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4609043d-4f2a-4a0c-9b32-982c5665838d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4a6c0249-c572-47eb-a7e6-460938ae0f95")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27238f48-c80f-4882-8c77-460a7da4cc32")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe89c4ce-e05d-4acd-96c0-64e17b397b7b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -0.65 -1.225)
+		(end 0.65 -1.225)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "521c9441-79e9-4b8b-8a4a-692686eaca1a")
+	)
+	(fp_line
+		(start -0.65 1.225)
+		(end 0.65 1.225)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "db93a81d-3186-43c9-b9fb-d437d0ddc12c")
+	)
+	(fp_line
+		(start -1.5 -1.2)
+		(end 1.5 -1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "fb5310a2-cc4c-43ec-a599-6ae675ae2d68")
+	)
+	(fp_line
+		(start -1.5 1.2)
+		(end -1.5 -1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "7eec90c3-f7c9-49a3-bf55-fbb75da04acd")
+	)
+	(fp_line
+		(start 1.5 -1.2)
+		(end 1.5 1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "26e6f42a-aee4-4ecd-b2b1-8602cfcbf9b9")
+	)
+	(fp_line
+		(start 1.5 1.2)
+		(end -1.5 1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "9ce3f069-d487-4841-b805-75e28923d6a5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4f5d725e-aae9-4396-aaa2-9675990d395f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.525 0 90)
+		(size 2.65 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1)
+		(uuid "b8cfb173-0bf5-4b38-8eff-f8580b4dc83f")
+	)
+	(pad "2" smd rect
+		(at 1.525 0 90)
+		(size 2.65 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1)
+		(uuid "5f757347-7339-4fcb-ad0b-9d347a5bd5dd")
+	)
+	(model "${TAVU_KICAD_LIB}/e-radionica.com footprinti.3dshapes/1210C.STEP"
+		(offset
+			(xyz 0 0 1.9)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 0 0)
+		)
+	)
+)

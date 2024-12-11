@@ -1,0 +1,104 @@
+(footprint "SMD-JUMPER-CONNECTED_TRACE_SLODERMASK"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.04 -1.24 0)
+		(unlocked yes)
+		(layer "User.1")
+		(uuid "cf0cbf49-9227-4a65-a96c-c92f9f9bc2c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SMD-JUMPER-CONNECTED_TRACE_SLODERMASK"
+		(at 0 1.77 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f0d6b5ed-5690-4fcb-a33e-21edb276b331")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "131beeeb-b43f-4e45-8602-7a4805f7bd69")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c704606e-f9cc-4c91-90dd-09022c689f3f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8395cd1-0f49-49a9-bafb-7c670d97b584")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy 0.1 0.1) (xy -0.1 0.1) (xy -0.1 -0.1) (xy 0.1 -0.1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Cu")
+		(uuid "40c3d2d7-eb23-4aeb-9e69-e0f5fd4aabf0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.27 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fd17021e-e99f-41f5-b248-060609005c8a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.35 0)
+		(size 0.5 1)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.1)
+		(uuid "2555e19c-8326-49da-adeb-2dfe910bc049")
+	)
+	(pad "2" smd rect
+		(at 0.35 0)
+		(size 0.5 1)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.1)
+		(uuid "b09d2768-ab68-4ebc-b7cc-ca6dacade9b5")
+	)
+)
