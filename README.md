@@ -1,5 +1,5 @@
 # ProtoPCB
-![project overview figure](./Images/Fig1.jpg)
+![project overview figure](./Images/Figure1.png)
 
 This repository contains our tests, evaluation files, and software tool (ProtoPCB) presented in the paper "ProtoPCB: Reclaiming Printed Circuit Board E-waste as Prototyping Material", which will appear at CHI2025. This tool was built by Jasmine Lu (@xjasminelu), Sai Rishitha Boddu (@rishiboddu) with project assistance from Pedro Lopes at the University of Chicago's [Human Computer Integration Lab](https://lab.plopes.org).
 
@@ -36,7 +36,7 @@ Code is organized in the code directory. This includes ProtoPCB's base code (scr
 All files and data for the Technical Evaluation (PCB boards) can be found in the [Evaluation Files](./Evaluation Files) directory
 
 ### Installation
-To use ecoEDA, you must have installed KiCad (v7+) and Python3 on your machine. The system was built primarily with Mac OS. It has not been tested yet on Windows so some elements may not port over well. If you're interested in collaborating on a Windows version, please reach out!
+To use ProtoPCB, you must have installed KiCad and Python3 on your machine. The system was built primarily with Mac OS. It has not been tested yet on Windows so some elements may not port over well. If you're interested in collaborating on a Windows version, please reach out!
 
 Detailed instructions can be found on the page [INSTALL.md](./INSTALL.md)
 
