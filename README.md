@@ -46,7 +46,7 @@ As this tool was born out of a research project, it is a _prototype_. However, w
 
 ### How to contribute
 (adapted from [Clipy](https://github.com/Clipy/Clipy))
-1. Fork it ( https://github.com/humancomputerintegration/ecoEDA/fork )
+1. Fork it ( https://github.com/humancomputerintegration/ProtoPCB/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
